@@ -16,7 +16,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'language' => 'ru',
-    'defaultRoute' => 'contact/index',
+    'defaultRoute' => 'contact-item/index',
     'components' => [
         'request' => [
             'cookieValidationKey' => $params['cookieValidationKey'],
@@ -55,7 +55,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'item'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'contact'],
             ],
         ],
     ],
